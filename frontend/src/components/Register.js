@@ -52,6 +52,8 @@ const Register = () => {
         }
 
   return (
+
+    
     <div className="container">
  <ToastContainer
         position="top-center"
