@@ -1,0 +1,10 @@
+  {
+    "category": "tshirt",
+    "brand": "Puma",
+    "slug":"wear-puma-01",
+    "desc":"men's tshirt",
+    "size":"M",
+    "availableQty": 45,
+    "price":488,
+    "color":"red"
+}
