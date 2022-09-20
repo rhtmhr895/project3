@@ -3,9 +3,12 @@ import './App.css';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 // import UserLoginD from './context/Userdata/UserLoginD';
 import Navbar from'./components/Navbar';
-import Home from'./components/home';
-import Login from'./components/Login';
-import Register from './components/Register';
+import Home from'./pages/home';
+import Login from'./pages/Login';
+import Register from './pages/Register';
+import Tshirts from './pages/Tshirts';
+import Footer from './components/footer';
+// import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -16,9 +19,11 @@ function App() {
               <Route exact path='/' element={<Home/>} />
               <Route path="/login" element={<Login/>} />
               <Route path="/register" element={<Register/>} />
+              <Route path="/tshirts" element={< Tshirts/>}/>
     </Routes>
+    <Footer/>
     </Router>
-  
+   
     </div>
   );
 }

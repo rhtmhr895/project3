@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../components/regs.css'
+import './regs.css'
 import pic from '../images/img.jpg'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -55,17 +55,17 @@ const Register = () => {
 
     
     <div className="container">
- <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+    <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
       <form onSubmit={submitForm}>
         <h2>Create New Account</h2>
         <br></br>

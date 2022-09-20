@@ -1,4 +1,4 @@
-import '../components/regs.css';
+import './regs.css';
 import logpic from '../images/imglogin.jpg'
 import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';

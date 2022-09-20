@@ -1,7 +1,7 @@
 const register = require('../model/SignUpSchema');
 const crypt = require('bcrypt');
 const valid1 = require('../validator/validateRegs');
-const tullu = require('twilio')('AC6575cee25785e0de60dbf388a7c8a0bc','d22504c1bf70866a8ea424cd4d92d5b6')
+const tullu = require('twilio')('auth id','auth token')
 const Register = async(req,res)=>{
     try{
         let v = await valid1.validateAsync(req.body);
@@ -21,7 +21,7 @@ const Register = async(req,res)=>{
 
                 tullu.messages.create({
                     body: 'Hey there you have successfully registered on Navbar.... Happy Shopping',
-                    to: '+918958437307',
+                    to: '+98958437307',
                     from: '+17432000078'
                  }).then(message => console.log(message))
                    // here you can implement your fallback code
