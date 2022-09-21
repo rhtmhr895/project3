@@ -7,11 +7,14 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
 const Login =()=>{
     // const[msg, setMsg] = useState("")
     const [value, setValue] = useState({
       email: '', password: ''
     });
+
 
     const setValues = (event) => {
         
@@ -38,6 +41,7 @@ const Login =()=>{
               progress: undefined,
             });
           }
+          chng1();
         }).catch((error) => {
             console.log(error)
         });
@@ -49,6 +53,10 @@ const Login =()=>{
           let path = `/Register`; 
           navigate(path);
         }
+    const chng1 =()=>{
+      let path =`/Home`;
+      navigate(path)
+    }
        
 
   return (

@@ -8,13 +8,17 @@ import Login from'./pages/Login';
 import Register from './pages/Register';
 import Tshirts from './pages/Tshirts';
 import Footer from './components/footer';
-// import NotFound from './pages/NotFound';
-
+import Images from '../src/components/Images';
+import Carousel from '../src/components/carousel';
 function App() {
+
+  // console.log(Images[0]);
   return (
+    
     <div className="App">
     <Router>
     <Navbar/>
+    <Carousel images={Images}></Carousel>
     <Routes>
               <Route exact path='/' element={<Home/>} />
               <Route path="/login" element={<Login/>} />
