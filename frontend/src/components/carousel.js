@@ -14,7 +14,7 @@ const settings = {
 	slidesToScroll: 1,
 	lazyLoad: true,
 	autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
 
 };
 
@@ -29,6 +29,8 @@ return (
 		{images.map((item) => (
 			<div key={item.id}>
 			<img src={item.src.img} alt={item.alt} />
+			<img src={item.src.img1} alt={item.alt} />
+			<img src={item.src.img2} alt={item.alt} />
 			</div>
 		))}
 		</Slider>

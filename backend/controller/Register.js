@@ -1,7 +1,7 @@
 const register = require('../model/SignUpSchema');
 const crypt = require('bcrypt');
 const valid1 = require('../validator/validateRegs');
-const tullu = require('twilio')('AC6575cee25785e0de60dbf388a7c8a0bc','6dfecf7ebadc209a0f92092128a5a958')
+const tullu = require('twilio')('authid','authtoken')
 const Register = async(req,res)=>{
     try{
         let v = await valid1.validateAsync(req.body);

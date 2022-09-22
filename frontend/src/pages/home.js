@@ -6,9 +6,9 @@ import Carousel from '../components/carousel';
   
 const Home = () => {
     return (
-       <>
-        {/* <Carousel images={Images}></Carousel> */}
-      </>
+       <div>
+        <Carousel images={Images}></Carousel>
+      </div>
     )
 }
 

@@ -1,3 +1,4 @@
+const ProductSchema = require('../model/ProductSchema');
 const newPrd = require('../model/ProductSchema');
 const validate = require('../validator/validate')
 
@@ -18,9 +19,11 @@ const newProduct = async(req,res)=>{
             res.status(201).json({
                 success:true,
                 data :{
-                    name: Prodt.brand,
-                    size: Prodt.size,
-                    color: Prodt.color}
+                   name:Prodt.brand,
+                   size:Prodt.size,
+                   image:Prodt.image,
+                   price:Prodt.price
+                }
             });
 
         }

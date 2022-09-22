@@ -1,23 +1,23 @@
-import img from '../images/img.jpg';
-import img1 from '../images/main2.jpg';
-import img2 from '../images/main.jpg'
+import img from '../images/Banner.webp';
+import img1 from '../images/Banner-2.webp';
+import img2 from '../images/banner-3.webp'
 
 // console.log(img);
 
 const Images = [{
     id: 1,
     src: {img},
-    alt: "Image 1"
+    
 },
 {
     id: 2,
     src: {img1},
-    alt: "Image 2 "
+    
 },
 {
     id: 3,
     src: {img2},
-    alt: "Image 3"
+    
 }
 ];
 
